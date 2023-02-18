@@ -9,7 +9,7 @@ document.getElementById('triangle-value').addEventListener('click',function(){
     const heightValue = height.value;
     const areaTriangle= 0.5*parseFloat(baseValue)*parseFloat(heightValue);
 
-    document.getElementById('final-output').innerText = areaTriangle;
+    document.getElementById('final-output').innerText = areaTriangle+' cm^2';
     document.getElementById('geometric-shape').innerText= 'Triangle';
     
 })
@@ -26,7 +26,7 @@ document.getElementById('rectangle-value').addEventListener('click',function(){
 
     const previousFinalOutput = document.getElementById('final-output');
     const finalOutputString = previousFinalOutput.innerText;
-    const currentOutput= finalOutputString +'\n'+areaRectangle;
+    const currentOutput= finalOutputString +'\n'+areaRectangle+' cm^2';
     previousFinalOutput.innerText = currentOutput;
 
     const previousGeometry = document.getElementById('geometric-shape').innerText;
@@ -50,10 +50,10 @@ document.getElementById('parallelogram-value').addEventListener('click',function
     const finalOutputString = previousFinalOutput.innerText;
     let currentOutput;
     if(finalOutputString ===''){
-         currentOutput= areaParallelogram;
+         currentOutput= areaParallelogram+' cm^2';
     }
     else{
-         currentOutput= finalOutputString +'\n'+areaParallelogram;
+         currentOutput= finalOutputString +'\n'+areaParallelogram+' cm^2';
     }
     
     previousFinalOutput.innerText = currentOutput;
@@ -79,10 +79,10 @@ document.getElementById('rhombus-value').addEventListener('click',function(){
     const finalOutputString = previousFinalOutput.innerText;
     let currentOutput;
     if(finalOutputString ===''){
-         currentOutput= areaRhombus;
+         currentOutput= areaRhombus+' cm^2';
     }
     else{
-         currentOutput= finalOutputString +'\n'+areaRhombus;
+         currentOutput= finalOutputString +'\n'+areaRhombus+' cm^2';
     }
     
     previousFinalOutput.innerText = currentOutput;
@@ -105,10 +105,10 @@ document.getElementById('pentagon-value').addEventListener('click',function(){
     const finalOutputString = previousFinalOutput.innerText;
     let currentOutput;
     if(finalOutputString ===''){
-         currentOutput= areaPentagon;
+         currentOutput= areaPentagon+' cm^2';
     }
     else{
-         currentOutput= finalOutputString +'\n'+areaPentagon;
+         currentOutput= finalOutputString +'\n'+areaPentagon+' cm^2';
     }
     
     previousFinalOutput.innerText = currentOutput;
@@ -132,10 +132,10 @@ document.getElementById('ellipse-value').addEventListener('click',function(){
     const finalOutputString = previousFinalOutput.innerText;
     let currentOutput;
     if(finalOutputString ===''){
-         currentOutput= areaEllipse;
+         currentOutput= areaEllipse+' cm^2';
     }
     else{
-         currentOutput= finalOutputString +'\n'+areaEllipse;
+         currentOutput= finalOutputString +'\n'+areaEllipse+' cm^2';
     }
     
     previousFinalOutput.innerText = currentOutput;
