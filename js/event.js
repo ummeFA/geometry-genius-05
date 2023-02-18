@@ -120,27 +120,28 @@ document.getElementById('pentagon-value').addEventListener('click',function(){
 })
 
 // for Ellipse
-document.getElementById('pentagon-value').addEventListener('click',function(){
+document.getElementById('ellipse-value').addEventListener('click',function(){
 
     const base = 6;
     const height = 10;
-    const areaPentagon = 0.5*base*height;
-    
+    // const areaEllipse = Math.round((3.1416*base*height)*100/100);
+    const result = Math.PI*base*height
+    const areaEllipse = result.toFixed(2);
 
     const previousFinalOutput = document.getElementById('final-output');
     const finalOutputString = previousFinalOutput.innerText;
     let currentOutput;
     if(finalOutputString ===''){
-         currentOutput= areaPentagon;
+         currentOutput= areaEllipse;
     }
     else{
-         currentOutput= finalOutputString +'\n'+areaPentagon;
+         currentOutput= finalOutputString +'\n'+areaEllipse;
     }
     
     previousFinalOutput.innerText = currentOutput;
 
     const previousGeometry = document.getElementById('geometric-shape').innerText;
-    document.getElementById('geometric-shape').innerText= previousGeometry+ ' Pentagon';
+    document.getElementById('geometric-shape').innerText= previousGeometry+ ' Ellipse';
     
     document.getElementById('final-output').innerText = previousFinalOutput.innerText;   
 })
