@@ -38,3 +38,30 @@ document.getElementById('rectangle-value').addEventListener('click',function(){
     
 })
 
+// for parallelogram
+document.getElementById('parallelogram-value').addEventListener('click',function(){
+
+    const base = 10;
+    const height = 12;
+    const areaParallelogram = base*height;
+    
+
+    const previousFinalOutput = document.getElementById('final-output');
+    const finalOutputString = previousFinalOutput.innerText;
+    let currentOutput;
+    if(finalOutputString ===''){
+         currentOutput= areaParallelogram;
+    }
+    else{
+         currentOutput= finalOutputString +'\n'+areaParallelogram;
+    }
+    
+    previousFinalOutput.innerText = currentOutput;
+
+    const previousGeometry = document.getElementById('geometric-shape').innerText;
+    document.getElementById('geometric-shape').innerText= previousGeometry+ ' Parallelogram';
+    
+    document.getElementById('final-output').innerText = previousFinalOutput.innerText;
+
+    
+})
