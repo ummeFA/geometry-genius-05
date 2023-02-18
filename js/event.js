@@ -65,3 +65,82 @@ document.getElementById('parallelogram-value').addEventListener('click',function
 
     
 })
+
+
+// for Rhombus
+document.getElementById('rhombus-value').addEventListener('click',function(){
+
+    const base = 16;
+    const height = 8;
+    const areaRhombus = 0.5*base*height;
+    
+
+    const previousFinalOutput = document.getElementById('final-output');
+    const finalOutputString = previousFinalOutput.innerText;
+    let currentOutput;
+    if(finalOutputString ===''){
+         currentOutput= areaRhombus;
+    }
+    else{
+         currentOutput= finalOutputString +'\n'+areaRhombus;
+    }
+    
+    previousFinalOutput.innerText = currentOutput;
+
+    const previousGeometry = document.getElementById('geometric-shape').innerText;
+    document.getElementById('geometric-shape').innerText= previousGeometry+ ' Rhombus';
+    
+    document.getElementById('final-output').innerText = previousFinalOutput.innerText;   
+})
+
+// for Pentagon
+document.getElementById('pentagon-value').addEventListener('click',function(){
+
+    const base = 6;
+    const height = 10;
+    const areaPentagon = 0.5*base*height;
+    
+
+    const previousFinalOutput = document.getElementById('final-output');
+    const finalOutputString = previousFinalOutput.innerText;
+    let currentOutput;
+    if(finalOutputString ===''){
+         currentOutput= areaPentagon;
+    }
+    else{
+         currentOutput= finalOutputString +'\n'+areaPentagon;
+    }
+    
+    previousFinalOutput.innerText = currentOutput;
+
+    const previousGeometry = document.getElementById('geometric-shape').innerText;
+    document.getElementById('geometric-shape').innerText= previousGeometry+ ' Pentagon';
+    
+    document.getElementById('final-output').innerText = previousFinalOutput.innerText;   
+})
+
+// for Ellipse
+document.getElementById('pentagon-value').addEventListener('click',function(){
+
+    const base = 6;
+    const height = 10;
+    const areaPentagon = 0.5*base*height;
+    
+
+    const previousFinalOutput = document.getElementById('final-output');
+    const finalOutputString = previousFinalOutput.innerText;
+    let currentOutput;
+    if(finalOutputString ===''){
+         currentOutput= areaPentagon;
+    }
+    else{
+         currentOutput= finalOutputString +'\n'+areaPentagon;
+    }
+    
+    previousFinalOutput.innerText = currentOutput;
+
+    const previousGeometry = document.getElementById('geometric-shape').innerText;
+    document.getElementById('geometric-shape').innerText= previousGeometry+ ' Pentagon';
+    
+    document.getElementById('final-output').innerText = previousFinalOutput.innerText;   
+})
