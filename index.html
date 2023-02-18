@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geometry Genius</title>
-    <link rel="stylesheet" href="styles/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
@@ -30,53 +29,53 @@
     <div class="grid grid-cols-4 gap-4 pt-8">
 
         <!-- Triangle -->
-        <div class="border-2 rounded content-center pl-16 py-5 hover:bg-red-100">
+        <div class="border-2 rounded grid place-items-center py-5 hover:bg-red-100">
             <div>
                 <img src="images/triangle.png" alt="">
             </div>
-            <h1 class="pl-16 pt-5 font-bold">Triangle</h1>
-            <p class="ml-8">Area (A) = 0.5 x b x h</p>
-            <div class="flex my-5 ml-5 ">
+            <h1 class="pt-5 font-bold">Triangle</h1>
+            <p>Area (A) = 0.5 x b x h</p>
+            <div class="flex my-5 ">
                 <input class="bg-gray-100 w-12 text-center" type="text" name="" id="base-value">
             <p>cm</p>
                 <input class="bg-gray-100 w-12 ml-2 text-center" type="text" name="" id="height-value">
             <p>cm</p>
             </div>
-            <div class="ml-8">
+            <div>
                 <button id="triangle-value" class="px-16 py-2 bg-sky-500 font-bold text-white rounded">Calculate</button>
                 <!-- <button id="" class="px-16 py-2 bg-sky-500 font-bold text-white rounded">Convert to m^2</button> -->
             </div>
         </div>
 
         <!-- Rectangle -->
-        <div class="border-2 rounded content-center pl-16 py-5 hover:bg-teal-100">
+        <div class="border-2 rounded grid place-items-center py-5 hover:bg-teal-100">
             <div>
                 <img src="images/rectangle.png" alt="">
             </div>
-            <h1 class="pl-16 pt-5 font-bold">Rectangle</h1>
-            <p class="ml-8">Area (A) = w x l</p>
-            <div class="flex my-5 ml-5 ">
+            <h1 class="pt-5 font-bold">Rectangle</h1>
+            <p>Area (A) = w x l</p>
+            <div class="flex my-5">
                 <input id="width-value" class="bg-gray-100 w-12 text-center" type="text" name="" id="">
             <p>cm</p>
                 <input id="height-value" class="bg-gray-100 w-12 ml-2 text-center" type="text" name="" id="">
             <p>cm</p>
             </div>
-            <div class="ml-8">
+            <div>
                 <button id="rectangle-value" class="px-16 py-2 bg-sky-500 font-bold text-white rounded">Calculate</button>
             </div>
         </div>
 
         <!-- Parallelogram -->
-        <div class="border-2 rounded content-center pl-16 py-5 hover:bg-yellow-100">
+        <div class="border-2 rounded grid place-items-center py-5 hover:bg-yellow-100">
             <div>
                 <img src="images/parallelogram.png" alt="">
             </div>
-            <h1 class="pl-16 pt-5 font-bold">Parallelogram</h1>
-            <p class="ml-8">Area (A) = b x h</p>
-            <div class="flex my-5 ml-5 ">
-            <p class="pl-5">b=10cm, h=12cm</p>
+            <h1 class="pt-5 font-bold">Parallelogram</h1>
+            <p>Area (A) = b x h</p>
+            <div class="flex my-5">
+            <p>b=10cm, h=12cm</p>
             </div>
-            <div class="ml-8">
+            <div>
                 <button id="parallelogram-value" class="px-16 py-2 bg-sky-500 font-bold text-white rounded">Calculate</button>
             </div>
         </div>
@@ -95,55 +94,50 @@
         </div>
 
         <!-- Rhombus -->
-        <div class="border-2 rounded content-center pl-16 py-5 hover:bg-lime-200">
+        <div class="border-2 rounded grid place-items-center py-5 hover:bg-lime-200">
             <div>
                 <img src="images/rhombus.png" alt="">
             </div>
-            <h1 class="pl-16 pt-5 font-bold">Rhombus</h1>
-            <p class="ml-8">Area (A) = 0.5 x d1 x d2</p>
-            <div class="flex my-5 ml-5 ">
-            <p class="pl-5">d<sub>1</sub> = 16cm, d<sub>2</sub> = 8cm</p>
+            <h1 class="pt-5 font-bold">Rhombus</h1>
+            <p>Area (A) = 0.5 x d1 x d2</p>
+            <div class="flex my-5">
+            <p>d<sub>1</sub> = 16cm, d<sub>2</sub> = 8cm</p>
             </div>
-            <div class="ml-8">
+            <div>
                 <button id="rhombus-value" class="px-16 py-2 bg-sky-500 font-bold text-white rounded">Calculate</button>
             </div>
         </div>
 
         <!-- Pentagon -->
-        <div class="border-2 rounded content-center pl-20 py-5 hover:bg-fuchsia-400">
+        <div class="border-2 rounded grid place-items-center py-5 hover:bg-fuchsia-400">
             <div>
                 <img src="images/pentagon.png" alt="">
             </div>
-            <h1 class="pl-16 pt-5 font-bold">Pentagon</h1>
-            <p class="ml-8">Area (A) = 0.5 x p x b</p>
-            <div class="flex my-5 ml-5 ">
-                <p class="ml-8">p = 6 cm, b = 10 cm</p>
+            <h1 class="pt-5 font-bold">Pentagon</h1>
+            <p>Area (A) = 0.5 x p x b</p>
+            <div class="flex my-5">
+                <p>p = 6 cm, b = 10 cm</p>
             </div>
-            <div class="ml-8">
+            <div>
                 <button id="pentagon-value" class="px-16 py-2 bg-sky-500 font-bold text-white rounded">Calculate</button>
             </div>
         </div>
 
         <!-- Ellipse -->
-        <div class="border-2 rounded content-center pl-16 py-5 hover:bg-pink-800">
+        <div class="border-2 rounded grid place-items-center py-5 hover:bg-pink-800">
             <div>
                 <img src="images/ellipse.png" alt="">
             </div>
-            <h1 class="pl-16 pt-5 font-bold">Ellipse</h1>
-            <p class="ml-8">Area (A) = πab</p>
-            <div class="flex my-5 ml-5 ">
+            <h1 class="pt-5 font-bold">Ellipse</h1>
+            <p>Area (A) = πab</p>
+            <div class="flex my-5">
                 <p>a = 10cm, b = 4cm</p>
         
             </div>
-            <div class="ml-8">
+            <div>
                 <button id="ellipse-value" class="px-16 py-2 bg-sky-500 font-bold text-white rounded">Calculate</button>
             </div>
         </div>
-
-    
-
-        
-
 
     </div>
     <script src="js/event.js"></script>

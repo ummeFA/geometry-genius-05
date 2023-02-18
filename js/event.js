@@ -14,7 +14,6 @@ document.getElementById('triangle-value').addEventListener('click',function(){
     
 })
 
-//for rectangle
 document.getElementById('rectangle-value').addEventListener('click',function(){
     const width = document.getElementById('width-value');
     const height = document.getElementById('height-value');
@@ -32,7 +31,6 @@ document.getElementById('rectangle-value').addEventListener('click',function(){
     const previousGeometry = document.getElementById('geometric-shape').innerText;
     document.getElementById('geometric-shape').innerText= previousGeometry+ ' Rectangle';
     
-
     document.getElementById('final-output').innerText = previousFinalOutput.innerText;
 
     
